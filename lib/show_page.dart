@@ -52,7 +52,10 @@ class NoteDetailState extends State<NoteDetail> {
 
   @override
   Widget build(BuildContext context) {
-   //  generateData();
+    // this method generate the data in the database i should use it one time only 
+    // the first time i run the app then i comment it so it wont work again 
+    
+     generateData();
     return PagewiseListView(
         pageSize: 20,
         itemBuilder: this._itemBuilder,
